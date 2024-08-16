@@ -20,3 +20,10 @@ jobs:
         env:
            token: ${{ secrets.TOKEN }}
            chat_id: ${{ secrets.CHAT_ID }}
+
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3
+        with: # Artifact name
+          name: ${{ matrix.device }}
+          # A file, directory or wildcard pattern that describes what to upload
+          path: ./out/*.zip  
