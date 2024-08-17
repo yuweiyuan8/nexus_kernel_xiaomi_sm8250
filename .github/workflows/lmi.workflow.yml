@@ -26,4 +26,4 @@ jobs:
         with: # Artifact name
           name: ${{ matrix.device }}
           # A file, directory or wildcard pattern that describes what to upload
-          path: ./*.zip  
+          path: ./AnyKernel3/*.zip  
